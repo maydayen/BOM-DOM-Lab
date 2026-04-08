@@ -268,9 +268,18 @@
 								  if (e.key === "Enter") { 
 								    addNote(); 
 								  } 
-});
-	    } 
-	  } 
+							});
+	    				} 
+	  				}
+	  				function updateWindowSize() { 
+					  const w = window.innerWidth; 
+					  const h = window.innerHeight; 
+					  let category; 
+					  if (w < 480)       category = "📱📱 Mobile"; 
+					  else if (w < 1024) category = "💻💻 Tablet"; 
+					  else               category = "🖥🖥 Desktop"; 
+					  windowSizeSpan.textContent = `${w} x ${h} px  (${category})`; 
+}  
 }  
   		}// end renderNotes
 
