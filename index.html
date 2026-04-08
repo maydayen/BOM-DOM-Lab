@@ -187,6 +187,12 @@
 		const windowSizeSpan  = document.getElementById("windowSize"); 
 		const userAgentSpan   = document.getElementById("userAgent");
 
+		function updateCounter() { 
+		  const count = notes.length; 
+		  noteCounterSpan.textContent = 
+		    count === 1 ? "1 note" : `${count} notes`; 
+		} 
+
 	</script>
 	
 </body>
