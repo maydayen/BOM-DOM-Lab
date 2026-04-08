@@ -264,6 +264,11 @@
 				    if (newTitle !== null && newTitle.trim() !== "") { 
 				      found.title = newTitle.trim(); 
 				      renderNotes(); 
+				      titleInput.addEventListener("keydown", (e) => { 
+								  if (e.key === "Enter") { 
+								    addNote(); 
+								  } 
+});
 	    } 
 	  } 
 }  
